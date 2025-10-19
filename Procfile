@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn projetoNETFLIX:wsgi --log-file -
+web: python manage.py migrate && gunicorn projetoNETFLIX.wsgi:application
