@@ -31,6 +31,7 @@ class Homepage(FormView):
         email = self.request.POST.get('email')
         usuario = Usuario.objects.filter(email=email)
 
+
         if usuario:
             return reverse('filme:login')
         else:
